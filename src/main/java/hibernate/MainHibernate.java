@@ -24,7 +24,7 @@ public class MainHibernate {
 
 
         HibernateDao employeeDao = new HibernateDao();
-        Employees employee = new Employees("Test", "Test", "Test", "Test", 1000, 18 , new Date(), 1);
+        Employees employee = new Employees("Test", "Test", "Test", "Test", 1000, 18 , new Date(), 1,"mail@mail.com");
         employeeDao.saveHibernateEntity(employee);
         List<Employees> employeesList = employeeDao.getEmployees();
 

@@ -5,21 +5,28 @@
 <table border="2" width="70%" cellpadding="2">
     <tr>
         <th>Id</th>
-        <th>Name</th>
+        <th>First Name</th>
+        <th>Last Name</th>
         <th>Salary</th>
-        <th>Designation</th>
+        <th>Email</th>
         <th>Phones</th>
+        <th>Cars</th>
+        <th>Printers</th>
         <th>Action</th>
 
     </tr>
     <c:forEach var="emp" items="${list}">
         <tr>
             <td>${emp.id}</td>
-            <td>${emp.lastName}</td>
             <td>${emp.firstName}</td>
+            <td>${emp.lastName}</td>
             <td>${emp.salary}</td>
+            <td>${emp.email}</td>
+            <td></td>
+            <td></td>
+            <td></td>
 
-                <%--            <td>${emp.phones}</td>--%>
+<%--                            <td>${emp.phones}</td>--%>
 <%--            <td>${emp.printers}</td>--%>
 <%--            <td>${emp.cars}</td>--%>
             <td>

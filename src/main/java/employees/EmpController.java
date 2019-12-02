@@ -33,22 +33,23 @@ public class EmpController {
     @RequestMapping(value="/save", method = RequestMethod.POST)
     public ModelAndView save(@ModelAttribute("employees") Employees employee){
 
+        if (!employee.getEmail().matches("^([\\w-\\.]+){1,64}@([\\w&&[^_]]+){2,255}.[a-z]{2,}$"))
+            return showform();
+
         if(employee.getId()>0) {
             //update
-            System.out.println("Update employee nr: "+employee.getId());
+            System.out.println("Update employee nr: "+getEmployeesById(employee.getId()));
             getEmployeesById(employee.getId()).setLastName(employee.getLastName());
             getEmployeesById(employee.getId()).setSalary(employee.getSalary());
             getEmployeesById(employee.getId()).setFirstName(employee.getFirstName());
         }
          else {
-
             System.out.println(employee.getFirstName() + " " + employee.getSalary() + " " + employee.getLastName());
-
             System.out.println("New emp");
             employee.setId(employeesList.size() + 1);
             employeesList.add(employee);
-
         }
+
         return new ModelAndView("redirect:/viewemp");
     }
 

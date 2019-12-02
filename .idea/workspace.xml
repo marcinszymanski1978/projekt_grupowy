@@ -3,22 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="46ca0b2d-2c16-4f88-a040-516fafe7e385" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/employees/Emp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/employees/Emp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/employees/EmpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/employees/EmpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/Employees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernate/Employees.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/MainHibernate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernate/MainHibernate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mail/SendEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mail/SendEmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/empform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/empform.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/viewemp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/viewemp.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/employees/Emp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/employees/Emp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/employees/EmpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/employees/EmpController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/Employees.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate/Employees.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hibernate/MainHibernate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate/MainHibernate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-12-02" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-12-02" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/empform_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/empform_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/empform_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/empform_jsp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/viewemp_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/viewemp_jsp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/viewemp_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/viewemp_jsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -315,7 +313,7 @@
       <workItem from="1575102678823" duration="6863000" />
       <workItem from="1575285790473" duration="758000" />
       <workItem from="1575287826327" duration="2971000" />
-      <workItem from="1575292525401" duration="13273000" />
+      <workItem from="1575292525401" duration="16682000" />
     </task>
     <task id="LOCAL-00001" summary="abstraction added for Phone&amp;Employee&amp;Printer&amp;Cars">
       <created>1575104040224</created>
@@ -352,7 +350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575292632146</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="EmpController save form updated">
+      <created>1575310075642</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1575310075642</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,7 +389,8 @@
     <MESSAGE value="abstraction added for Phone&amp;Employee&amp;Printer&amp;Cars" />
     <MESSAGE value="working abstraction added for Phone&amp;Employee&amp;Printer&amp;Cars" />
     <MESSAGE value="@ManytoMany notation added" />
-    <option name="LAST_COMMIT_MESSAGE" value="@ManytoMany notation added" />
+    <MESSAGE value="EmpController save form updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="EmpController save form updated" />
   </component>
   <component name="WindowStateProjectService">
     <state x="583" y="198" key="#Assign_Data_Sources" timestamp="1575020898454">
@@ -411,38 +417,38 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="583" y="198" key="#Plugins/62.0.1858.1080@62.0.1858.1080" timestamp="1575015211892" />
-    <state x="583" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575293345949">
+    <state x="583" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575311894694">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="583" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1575293345948" />
+    <state x="583" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1575311894694" />
     <state x="842" y="428" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1574947306852">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="842" y="428" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1574947306852" />
-    <state x="580" y="134" key="CommitChangelistDialog2" timestamp="1575292631250">
+    <state x="580" y="134" key="CommitChangelistDialog2" timestamp="1575310074693">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="580" y="134" key="CommitChangelistDialog2/62.0.1858.1080@62.0.1858.1080" timestamp="1575292631250" />
+    <state x="580" y="134" key="CommitChangelistDialog2/62.0.1858.1080@62.0.1858.1080" timestamp="1575310074693" />
     <state x="771" y="294" key="FileChooserDialogImpl" timestamp="1575102778351">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="771" y="294" key="FileChooserDialogImpl/62.0.1858.1080@62.0.1858.1080" timestamp="1575102778351" />
-    <state width="1815" height="295" key="GridCell.Tab.0.bottom" timestamp="1575309915136">
+    <state width="1815" height="295" key="GridCell.Tab.0.bottom" timestamp="1575311996917">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1575309915136" />
-    <state width="1815" height="295" key="GridCell.Tab.0.center" timestamp="1575309915136">
+    <state width="1815" height="295" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1575311996917" />
+    <state width="1815" height="295" key="GridCell.Tab.0.center" timestamp="1575311996917">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1575309915136" />
-    <state width="1815" height="295" key="GridCell.Tab.0.left" timestamp="1575309915136">
+    <state width="1815" height="295" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1575311996917" />
+    <state width="1815" height="295" key="GridCell.Tab.0.left" timestamp="1575311996917">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1575309915136" />
-    <state width="1815" height="295" key="GridCell.Tab.0.right" timestamp="1575309915136">
+    <state width="1815" height="295" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1575311996917" />
+    <state width="1815" height="295" key="GridCell.Tab.0.right" timestamp="1575311996917">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1575309915136" />
+    <state width="1815" height="295" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1575311996917" />
     <state width="1815" height="364" key="GridCell.Tab.1.bottom" timestamp="1575000999306">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
@@ -471,10 +477,10 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="492" y="182" key="SettingsEditor/62.0.1858.1080@62.0.1858.1080" timestamp="1575285809620" />
-    <state x="583" y="261" key="Vcs.Push.Dialog.v2" timestamp="1575292634814">
+    <state x="583" y="261" key="Vcs.Push.Dialog.v2" timestamp="1575310084411">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="583" y="261" key="Vcs.Push.Dialog.v2/62.0.1858.1080@62.0.1858.1080" timestamp="1575292634814" />
+    <state x="583" y="261" key="Vcs.Push.Dialog.v2/62.0.1858.1080@62.0.1858.1080" timestamp="1575310084411" />
     <state x="687" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1575292525615">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>

@@ -7,21 +7,37 @@
       	<table >
             <form:hidden path="id" />
          <tr>  
-          <td>Name : </td> 
+          <td>First Name : </td>
           <td><form:input path="firstName" /></td>
          </tr>  
-         <tr>  
-          <td>Salary :</td>  
-          <td><form:input path="salary" /></td>
-         </tr> 
-         <tr>  
-          <td>Designation :</td>  
+         <tr>
+          <td>Last Name :</td>
           <td><form:input path="lastName" /></td>
-         </tr> 
+         </tr>
+         <tr>
+          <td>Salary :</td>
+          <td><form:input path="salary" /></td>
+         </tr>
+
+         <tr>
+          <td>Email :</td>
+          <td><form:input path="email" /></td>
+         </tr>
          
          <tr>  
           <td> </td>  
           <td><input type="submit" value="Save" /></td>  
          </tr>  
         </table>  
-       </form:form>  
+       </form:form>
+<br/>
+<td>
+    <form:form method="post" action="empform">
+        <input type="submit" class="button" name="test" value="Refresh"/>
+    </form:form>
+    <br/>
+    <form:form method="post" action="start">
+        <input type="submit" class="button" name="start" value="Home Page"/>
+    </form:form>
+    <br/>
+</td>
