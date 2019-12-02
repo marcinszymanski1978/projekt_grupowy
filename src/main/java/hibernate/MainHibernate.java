@@ -3,7 +3,7 @@ package hibernate;
 import java.util.*;
 
 //@EXTRA
-//Jeżeli ktoś doda do pracownika możliwość wczytywania zdjęcia oraz
+//         Jeżeli ktoś doda do pracownika możliwość wczytywania zdjęcia oraz
 //        zostanie ono zapisane do bazy danych i wyświetlone po otworzeniu formularza*
 //        Grupa 1
 //
@@ -21,6 +21,8 @@ import java.util.*;
 
 public class MainHibernate {
     public static void main(String[] args) {
+
+
         HibernateDao employeeDao = new HibernateDao();
         Employees employee = new Employees("Test", "Test", "Test", "Test", 1000, 18 , new Date(), 1);
         employeeDao.saveHibernateEntity(employee);

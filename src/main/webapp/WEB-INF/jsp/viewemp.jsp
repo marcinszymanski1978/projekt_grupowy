@@ -8,7 +8,9 @@
         <th>Name</th>
         <th>Salary</th>
         <th>Designation</th>
+        <th>Phones</th>
         <th>Action</th>
+
     </tr>
     <c:forEach var="emp" items="${list}">
         <tr>
@@ -16,6 +18,10 @@
             <td>${emp.lastName}</td>
             <td>${emp.firstName}</td>
             <td>${emp.salary}</td>
+
+                <%--            <td>${emp.phones}</td>--%>
+<%--            <td>${emp.printers}</td>--%>
+<%--            <td>${emp.cars}</td>--%>
             <td>
                 <form:form method="post" action="delete">
                     <input type="hidden" id="id" name="id" value="${emp.id}"/>
@@ -29,10 +35,16 @@
         </tr>
     </c:forEach>
 
-    <td>
-        <form:form method="post" action="test">
-            <input type="submit" class="button" name="test" value="test"/>
-        </form:form>
-    </td>
 
 </table>
+<br/>
+    <td>
+        <form:form method="post" action="test">
+            <input type="submit" class="button" name="test" value="Refresh"/>
+        </form:form>
+        <br/>
+        <form:form method="post" action="start">
+            <input type="submit" class="button" name="start" value="Home Page"/>
+        </form:form>
+        <br/>
+    </td>
