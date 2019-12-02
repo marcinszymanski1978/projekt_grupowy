@@ -66,4 +66,20 @@ public class HibernateDao implements HibernateEntity{
     }
 
 
+    public List<Cars> getCars() {
+        try (Session session = HibernateConfig.getSessionFactory().openSession()) {
+            return session.createQuery("from Cars", Cars.class).list();
+
+        }
+    }
+
+    public List<Printer> getPrinter() {
+        try (Session session = HibernateConfig.getSessionFactory().openSession()) {
+            return session.createQuery("from Printer", Printer.class).list();
+
+        }
+    }
+
+
+
 }

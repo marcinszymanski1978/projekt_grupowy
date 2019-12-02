@@ -60,10 +60,14 @@ public class Employees implements HibernateEntity{
     @ToString.Exclude
     private Set<Phones> phones;
 
-    @OneToMany(mappedBy = "employees", orphanRemoval = true, fetch = FetchType.EAGER)
+    @ManyToMany
+    @JoinTable(
+            name = "Employees_Printers",
+            joinColumns = @JoinColumn(name = "EMPLOYEE_ID"),
+            inverseJoinColumns = @JoinColumn(name = "PRINTER_ID"))
     @Getter @Setter
     @ToString.Exclude
-    private Set<Printer> printers;
+    private Set<Printer> printers = new HashSet<>();
 
 
 

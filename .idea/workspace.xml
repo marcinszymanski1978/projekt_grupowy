@@ -3,10 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="46ca0b2d-2c16-4f88-a040-516fafe7e385" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/CarsDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/EmployeeDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/Employees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernate/Employees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/HibernateDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernate/HibernateDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/MainHibernate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernate/MainHibernate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/PhoneDao.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/Printer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernate/Printer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/PrinterDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/CarsDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/EmployeeDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/Employees.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate/Employees.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/HibernateDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate/HibernateDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hibernate/MainHibernate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate/MainHibernate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/PhoneDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/Printer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate/Printer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/PrinterDao.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,6 +312,7 @@
       <workItem from="1575101655431" duration="651000" />
       <workItem from="1575102678823" duration="6863000" />
       <workItem from="1575285790473" duration="758000" />
+      <workItem from="1575287826327" duration="2971000" />
     </task>
     <task id="LOCAL-00001" summary="abstraction added for Phone&amp;Employee&amp;Printer&amp;Cars">
       <created>1575104040224</created>
@@ -396,22 +409,22 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="771" y="294" key="FileChooserDialogImpl/62.0.1858.1080@62.0.1858.1080" timestamp="1575102778351" />
-    <state width="1815" height="295" key="GridCell.Tab.0.bottom" timestamp="1575286548543">
+    <state width="1815" height="295" key="GridCell.Tab.0.bottom" timestamp="1575290957796">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1575286548543" />
-    <state width="1815" height="295" key="GridCell.Tab.0.center" timestamp="1575286548543">
+    <state width="1815" height="295" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1575290957796" />
+    <state width="1815" height="295" key="GridCell.Tab.0.center" timestamp="1575290957796">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1575286548543" />
-    <state width="1815" height="295" key="GridCell.Tab.0.left" timestamp="1575286548542">
+    <state width="1815" height="295" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1575290957796" />
+    <state width="1815" height="295" key="GridCell.Tab.0.left" timestamp="1575290957796">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1575286548542" />
-    <state width="1815" height="295" key="GridCell.Tab.0.right" timestamp="1575286548543">
+    <state width="1815" height="295" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1575290957796" />
+    <state width="1815" height="295" key="GridCell.Tab.0.right" timestamp="1575290957796">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1575286548543" />
+    <state width="1815" height="295" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1575290957796" />
     <state width="1815" height="364" key="GridCell.Tab.1.bottom" timestamp="1575000999306">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
@@ -444,10 +457,10 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="583" y="261" key="Vcs.Push.Dialog.v2/62.0.1858.1080@62.0.1858.1080" timestamp="1575104486602" />
-    <state x="687" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1575102678357">
+    <state x="687" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1575287845999">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="687" y="363" key="com.intellij.ide.util.TipDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1575102678357" />
+    <state x="687" y="363" key="com.intellij.ide.util.TipDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1575287845999" />
     <state x="647" y="250" key="run.anything.popup" timestamp="1575027346488">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>

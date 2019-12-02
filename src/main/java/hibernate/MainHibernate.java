@@ -1,9 +1,6 @@
 package hibernate;
 
-import java.util.Date;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 //@EXTRA
 //Jeżeli ktoś doda do pracownika możliwość wczytywania zdjęcia oraz
@@ -52,11 +49,12 @@ public class MainHibernate {
         employeeDao.updateHibernateEntity(employee);
 
         HibernateDao printerDao = new HibernateDao();
-        Printer printer = new Printer("Xerox",true,"Connectis",employee);
+        Printer printer = new Printer("Xerox",true,"Connectis");
         printerDao.saveHibernateEntity(printer);
         Set<Printer> printerList = new HashSet<>();
         printerList.add(printer);
         employee.setPrinters(printerList);
+
         employeeDao.updateHibernateEntity(employee);
 
 
