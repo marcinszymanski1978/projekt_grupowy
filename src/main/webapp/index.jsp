@@ -1,9 +1,18 @@
+
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-    <body>
-        <h2>
-            Hi!
-        </h2>
-        	<a href="empform">Add Employee</a> <br/>
-            <a href="viewemp">View Employees</a>
-    </body>
+<style><%@include file="/WEB-INF/css/index.css"%></style>
+<body>
+<h1>
+    Company Data Base
+</h1>
+
+<div id="content">
+
+    <a href="empform"><button class="button1">Dodaj pracownika</button></a>
+    <a href="viewemp"><button class="button1">Lista pracowników</button></a>
+
+</div>
+
+</body>
 </html>
