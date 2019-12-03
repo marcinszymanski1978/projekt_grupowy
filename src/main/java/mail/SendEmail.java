@@ -1,5 +1,7 @@
 package mail;
 
+import hibernate.HibernateEntity;
+
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
@@ -7,7 +9,7 @@ import java.util.Properties;
 
 public class SendEmail {
 
-    public static void main(String[] args) {
+    public static void sendEmailTo(HibernateEntity hibernateEntity, String recipient, String messageType, String messageBody){
 
         final String username = "test.kurs.123123@gmail.com";
         final String password = "Test1234@";
@@ -31,11 +33,10 @@ public class SendEmail {
             message.setFrom(new InternetAddress("from@gmail.com"));
             message.setRecipients(
                     Message.RecipientType.TO,
-                    InternetAddress.parse("crimson.kuba@gmail.com")
+                    InternetAddress.parse(recipient)
             );
-            message.setSubject("Testing");
-            message.setText("Witam,"
-                    + "\n\n Tutaj mail testowy");
+            message.setSubject(messageType);
+            message.setText(messageBody);
 
             Transport.send(message);
 

@@ -50,6 +50,10 @@ public class Employees implements HibernateEntity{
     @Getter @Setter
     private int benefit;
 
+    @Column(name = "Email")
+    @Getter @Setter
+    private String email;
+
     @OneToMany(mappedBy = "employees", orphanRemoval = true, fetch = FetchType.EAGER)
     @Getter @Setter
     @ToString.Exclude
@@ -60,16 +64,20 @@ public class Employees implements HibernateEntity{
     @ToString.Exclude
     private Set<Phones> phones;
 
-    @OneToMany(mappedBy = "employees", orphanRemoval = true, fetch = FetchType.EAGER)
+    @ManyToMany
+    @JoinTable(
+            name = "Employees_Printers",
+            joinColumns = @JoinColumn(name = "EMPLOYEE_ID"),
+            inverseJoinColumns = @JoinColumn(name = "PRINTER_ID"))
     @Getter @Setter
     @ToString.Exclude
-    private Set<Printer> printers;
+    private Set<Printer> printers = new HashSet<>();
 
 
 
     public Employees(){}
 
-    public Employees(String lastName, String firstName, String address, String city, int salary, int age, Date startJobDate, int benefit) {
+    public Employees(String lastName, String firstName, String address, String city, int salary, int age, Date startJobDate, int benefit, String email) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.address = address;
@@ -78,6 +86,7 @@ public class Employees implements HibernateEntity{
         this.age = age;
         this.startJobDate = startJobDate;
         this.benefit = benefit;
+        this.email = email;
     }
 
 

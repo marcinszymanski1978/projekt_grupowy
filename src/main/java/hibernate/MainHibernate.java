@@ -1,12 +1,9 @@
 package hibernate;
 
-import java.util.Date;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 //@EXTRA
-//Jeżeli ktoś doda do pracownika możliwość wczytywania zdjęcia oraz
+//         Jeżeli ktoś doda do pracownika możliwość wczytywania zdjęcia oraz
 //        zostanie ono zapisane do bazy danych i wyświetlone po otworzeniu formularza*
 //        Grupa 1
 //
@@ -24,8 +21,10 @@ import java.util.Set;
 
 public class MainHibernate {
     public static void main(String[] args) {
+
+
         HibernateDao employeeDao = new HibernateDao();
-        Employees employee = new Employees("Test", "Test", "Test", "Test", 1000, 18 , new Date(), 1);
+        Employees employee = new Employees("Test", "Test", "Test", "Test", 1000, 18 , new Date(), 1,"mail@mail.com");
         employeeDao.saveHibernateEntity(employee);
         List<Employees> employeesList = employeeDao.getEmployees();
 
@@ -52,11 +51,12 @@ public class MainHibernate {
         employeeDao.updateHibernateEntity(employee);
 
         HibernateDao printerDao = new HibernateDao();
-        Printer printer = new Printer("Xerox",true,"Connectis",employee);
+        Printer printer = new Printer("Xerox",true,"Connectis");
         printerDao.saveHibernateEntity(printer);
         Set<Printer> printerList = new HashSet<>();
         printerList.add(printer);
         employee.setPrinters(printerList);
+
         employeeDao.updateHibernateEntity(employee);
 
 

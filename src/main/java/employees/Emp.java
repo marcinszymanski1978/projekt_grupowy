@@ -14,6 +14,7 @@ public class Emp {
         this.name = name;
         this.salary = salary;
         this.designation = designation;
+
     }
 
 

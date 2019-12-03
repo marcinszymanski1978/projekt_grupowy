@@ -3,6 +3,8 @@ package hibernate;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "Printer")
@@ -32,11 +34,11 @@ public class Printer implements HibernateEntity{
     @NonNull
     private String localization;
 
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    @JoinColumn(name = "EMPLOYEE_ID", nullable = false, referencedColumnName = "ID")
+    @ManyToMany(mappedBy = "printers")
     @Getter @Setter
     @NonNull
-    public Employees employees;
+    public Set<Employees> employees = new HashSet<>();
+
 
     public Printer (){}
 

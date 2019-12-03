@@ -6,6 +6,7 @@
       <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/showEmp.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/showEmp.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/main/java/employees/Emp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/employees/Emp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/employees/EmpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/employees/EmpController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/HibernateDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernate/HibernateDao.java" afterDir="false" />
@@ -16,13 +17,27 @@
       <change beforePath="$PROJECT_DIR$/target/classes/employees/EmpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/employees/EmpController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hibernate/HibernateDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate/HibernateDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/employees/EmpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/employees/EmpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/Employees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernate/Employees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/MainHibernate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernate/MainHibernate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mail/SendEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mail/SendEmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/empform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/empform.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/viewemp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/viewemp.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/employees/EmpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/employees/EmpController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/Employees.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate/Employees.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/MainHibernate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate/MainHibernate.class" afterDir="false" />
+>>>>>>> 9c8855ff66494b95dc6bec45daaab9c0084a1dd2
       <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-12-02" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-12-02" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/empform_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/empform_jsp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/empform_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/empform_jsp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/viewemp_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/viewemp_jsp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/viewemp_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/viewemp_jsp.java" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.java" afterDir="false" />
+=======
+>>>>>>> 9c8855ff66494b95dc6bec45daaab9c0084a1dd2
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +74,7 @@
         <option value="CSS File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -116,17 +132,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Jakub\Desktop\ideaproject cz 2\mywebapp\src\main\webapp" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="hibernate" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Jakub\IdeaProjects\spring\spring_employees_with_bd\src\main\java\database" />
       <recent name="C:\Users\Jakub\Desktop\ideaproject cz 2\mywebapp\src\main\webapp\WEB-INF" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="employees" />
+      <recent name="hibernate" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jakub\Desktop\ideaproject cz 2\mywebapp\src\main\webapp" />
+    </key>
   </component>
+<<<<<<< HEAD
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -139,6 +157,8 @@
       </list>
     </option>
   </component>
+=======
+>>>>>>> 9c8855ff66494b95dc6bec45daaab9c0084a1dd2
   <component name="RunManager" selected="Maven.mywebapp [tomcat7:run]">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="database.Main" />
@@ -323,6 +343,7 @@
       <workItem from="1575101655431" duration="651000" />
       <workItem from="1575102678823" duration="6863000" />
       <workItem from="1575285790473" duration="758000" />
+<<<<<<< HEAD
       <workItem from="1575287889858" duration="2078000" />
       <workItem from="1575290094502" duration="4222000" />
       <workItem from="1575294334156" duration="7908000" />
@@ -330,6 +351,10 @@
       <workItem from="1575358240843" duration="300000" />
       <workItem from="1575358674386" duration="300000" />
       <workItem from="1575359016662" duration="7014000" />
+=======
+      <workItem from="1575287826327" duration="2971000" />
+      <workItem from="1575292525401" duration="16682000" />
+>>>>>>> 9c8855ff66494b95dc6bec45daaab9c0084a1dd2
     </task>
     <task id="LOCAL-00001" summary="abstraction added for Phone&amp;Employee&amp;Printer&amp;Cars">
       <created>1575104040224</created>
@@ -352,7 +377,28 @@
       <option name="project" value="LOCAL" />
       <updated>1575277871089</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="working abstraction added for Phone&amp;Employee&amp;Printer&amp;Cars">
+      <created>1575292577258</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575292577258</updated>
+    </task>
+    <task id="LOCAL-00005" summary="@ManytoMany notation added">
+      <created>1575292632146</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1575292632146</updated>
+    </task>
+    <task id="LOCAL-00006" summary="EmpController save form updated">
+      <created>1575310075642</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1575310075642</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,7 +429,9 @@
     </ignored-roots>
     <MESSAGE value="abstraction added for Phone&amp;Employee&amp;Printer&amp;Cars" />
     <MESSAGE value="working abstraction added for Phone&amp;Employee&amp;Printer&amp;Cars" />
-    <option name="LAST_COMMIT_MESSAGE" value="working abstraction added for Phone&amp;Employee&amp;Printer&amp;Cars" />
+    <MESSAGE value="@ManytoMany notation added" />
+    <MESSAGE value="EmpController save form updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="EmpController save form updated" />
   </component>
   <component name="WindowStateProjectService">
     <state x="583" y="198" key="#Assign_Data_Sources" timestamp="1575020898454">
@@ -410,38 +458,38 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="583" y="198" key="#Plugins/62.0.1858.1080@62.0.1858.1080" timestamp="1575015211892" />
-    <state x="583" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575015481163">
+    <state x="583" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575311894694">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="583" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1575015481163" />
+    <state x="583" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1575311894694" />
     <state x="842" y="428" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1574947306852">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="842" y="428" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1574947306852" />
-    <state x="580" y="134" key="CommitChangelistDialog2" timestamp="1575104448998">
+    <state x="580" y="134" key="CommitChangelistDialog2" timestamp="1575310074693">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="580" y="134" key="CommitChangelistDialog2/62.0.1858.1080@62.0.1858.1080" timestamp="1575104448998" />
+    <state x="580" y="134" key="CommitChangelistDialog2/62.0.1858.1080@62.0.1858.1080" timestamp="1575310074693" />
     <state x="771" y="294" key="FileChooserDialogImpl" timestamp="1575102778351">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="771" y="294" key="FileChooserDialogImpl/62.0.1858.1080@62.0.1858.1080" timestamp="1575102778351" />
-    <state width="1815" height="295" key="GridCell.Tab.0.bottom" timestamp="1575286548543">
+    <state width="1815" height="295" key="GridCell.Tab.0.bottom" timestamp="1575311996917">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1575286548543" />
-    <state width="1815" height="295" key="GridCell.Tab.0.center" timestamp="1575286548543">
+    <state width="1815" height="295" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1575311996917" />
+    <state width="1815" height="295" key="GridCell.Tab.0.center" timestamp="1575311996917">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1575286548543" />
-    <state width="1815" height="295" key="GridCell.Tab.0.left" timestamp="1575286548542">
+    <state width="1815" height="295" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1575311996917" />
+    <state width="1815" height="295" key="GridCell.Tab.0.left" timestamp="1575311996917">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1575286548542" />
-    <state width="1815" height="295" key="GridCell.Tab.0.right" timestamp="1575286548543">
+    <state width="1815" height="295" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1575311996917" />
+    <state width="1815" height="295" key="GridCell.Tab.0.right" timestamp="1575311996917">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1575286548543" />
+    <state width="1815" height="295" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1575311996917" />
     <state width="1815" height="364" key="GridCell.Tab.1.bottom" timestamp="1575000999306">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
@@ -470,14 +518,14 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="492" y="182" key="SettingsEditor/62.0.1858.1080@62.0.1858.1080" timestamp="1575285809620" />
-    <state x="583" y="261" key="Vcs.Push.Dialog.v2" timestamp="1575104486602">
+    <state x="583" y="261" key="Vcs.Push.Dialog.v2" timestamp="1575310084411">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="583" y="261" key="Vcs.Push.Dialog.v2/62.0.1858.1080@62.0.1858.1080" timestamp="1575104486602" />
-    <state x="687" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1575102678357">
+    <state x="583" y="261" key="Vcs.Push.Dialog.v2/62.0.1858.1080@62.0.1858.1080" timestamp="1575310084411" />
+    <state x="687" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1575292525615">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="687" y="363" key="com.intellij.ide.util.TipDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1575102678357" />
+    <state x="687" y="363" key="com.intellij.ide.util.TipDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1575292525615" />
     <state x="647" y="250" key="run.anything.popup" timestamp="1575027346488">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
