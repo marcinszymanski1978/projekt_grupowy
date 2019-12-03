@@ -2,6 +2,7 @@ package hibernate;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 
@@ -62,6 +63,14 @@ public class HibernateDao implements HibernateEntity{
     public List<Phones> getPhones() {
         try (Session session = HibernateConfig.getSessionFactory().openSession()) {
             return session.createQuery("from Phones", Phones.class).list();
+        }
+    }
+
+    public Employees getEmployee(int Id){
+        try (Session session = HibernateConfig.getSessionFactory().openSession()){
+            List<Employees> list =  session.createQuery("from Empolyees", Employees.class).list();
+            return list.stream().filter(f->f.getId()==Id).findFirst().get();
+
         }
     }
 

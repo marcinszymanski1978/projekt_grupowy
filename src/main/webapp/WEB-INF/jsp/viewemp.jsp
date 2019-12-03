@@ -4,15 +4,15 @@
 <style><%@include file="/WEB-INF/css/viewemp.css"%></style>
 
 
-<h1>View Employees List</h1>
+<h1>Lista pracowników</h1>
 <div class="tbl-header">
     <table cellpadding="0" cellspacing="0" border="0">
         <thead>
         <tr>
             <th>Id</th>
-            <th>Name</th>
-            <th>Salary</th>
-            <th>Designation</th>
+            <th>Nazwisko</th>
+            <th>Imię</th>
+            <th>Wynagrodzenie</th>
             <th>Action</th>
         </tr>
         </thead>

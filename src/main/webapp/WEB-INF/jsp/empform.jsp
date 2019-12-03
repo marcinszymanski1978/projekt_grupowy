@@ -1,27 +1,18 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <style><%@include file="/WEB-INF/css/style.css"%></style>
 
-		<h1>Add New Employee</h1>
-       <form:form method="post" action="save">
-      	<table >
-            <form:hidden path="id" />
-         <tr>  
-          <td>Name : </td> 
-          <td><form:input path="firstName" /></td>
-         </tr>  
-         <tr>  
-          <td>Salary :</td>  
-          <td><form:input path="salary" /></td>
-         </tr> 
-         <tr>  
-          <td>Designation :</td>  
-          <td><form:input path="lastName" /></td>
-         </tr> 
-         
-         <tr>  
-          <td> </td>  
-          <td><input type="submit" value="Save" /></td>  
-         </tr>  
-        </table>  
-       </form:form>  
+<div class="container">
+    <form:form method="post" action="save" class="signUp">
+        <h3>Dodaj pracownika</h3>
+        <p>do bazy danych</p>
+        <form:hidden path="id"/>
+        <form:input path="firstName" class="w100" placeholder="Wprowadź imię"  autocomplete='off' />
+        <form:input path="lastName"  placeholder="Wprowadź nazwisko"  />
+        <form:input path="salary" placeholder="wynagrodzenie"  />
+
+        <form:button class="form-btn dx" type="submit" value="save">Dodaj</form:button>
+    </form:form>
+
+</div>

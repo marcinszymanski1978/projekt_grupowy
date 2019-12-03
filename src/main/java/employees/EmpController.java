@@ -9,15 +9,18 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
 public class EmpController {
-    private List<Employees> list;
+    private List<Employees> list = new ArrayList<>();
+    private HibernateDao employeeDao;
+    Employees employees;
+
 
     public EmpController() {
-        HibernateDao employeeDao = new HibernateDao();
-        list = employeeDao.getEmployees();
+        employeeDao = new HibernateDao();
     }
 
     @RequestMapping("/empform")
@@ -27,26 +30,18 @@ public class EmpController {
 
     @RequestMapping(value="/save", method = RequestMethod.POST)
     public ModelAndView save(@ModelAttribute("employees") Employees employee){
-        if(employee.getId() < 0) {
-            System.out.println("New emp");
+        if(employee.getId() == 0) {
             employee.setId(list.size()+1);
-            list.add(employee);
+            employeeDao.saveHibernateEntity(employee);
         } else {
-            //update
-            System.out.println("Update employee nr: "+employee.getId());
-
-            Employees empTemp = getEmployeesById(employee.getId());
-//            employee.setName(empTemp.getName());
-//            employee.setSalary(empTemp.getSalary());
-//            employee.setDesignation(empTemp.getDesignation());
+            employeeDao.updateHibernateEntity(employee);
         }
-        System.out.println(employee.getFirstName()+" "+employee.getSalary()+" "+employee.getLastName());
         return new ModelAndView("redirect:/viewemp");
     }
 
     @RequestMapping(value="/delete", method=RequestMethod.POST)
     public ModelAndView delete(@RequestParam String id){
-        list.remove(getEmployeesById(Integer.parseInt(id)));
+        employeeDao.deleteHibernateEntity(getEmployeesById(Integer.parseInt(id)));
         return new ModelAndView("redirect:/viewemp");
     }
 
@@ -56,14 +51,10 @@ public class EmpController {
         return new ModelAndView("empform","command", employees);
     }
 
-    @RequestMapping(value="/test", method=RequestMethod.POST)
-    public ModelAndView test(){
-        System.out.println("Test");
-        return new ModelAndView("redirect:/viewemp");
-    }
-
     @RequestMapping("/viewemp")
     public ModelAndView viewemp(){
+        list.clear();
+        list = employeeDao.getEmployees();
         return new ModelAndView("viewemp","list", list);
     }
 
