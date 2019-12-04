@@ -46,6 +46,10 @@
                         <input type="hidden" id="id" name="id" value="${emp.id}"/>
                         <input type="submit" class="button1" name="Edit" value="edit"/>
                     </form:form>
+                    <form:form method="post" action="show">
+                        <input type="hidden" id="id" name="id" value="${emp.id}"/>
+                        <input type="submit" class="button1" name="Show" value="show"/>
+                    </form:form>
                 </td>
             </tr>
         </c:forEach>

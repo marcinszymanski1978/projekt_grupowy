@@ -11,7 +11,7 @@ hibernate\Phones.class
 hibernate\HibernateEntity.class
 controller\CarController.class
 database\SQLConnection.class
-controller\EmpDetailsController.class
+controller\PrinterController.class
 database\CRUDStatementSQL.class
 scope\MainScope.class
 hibernate\HibernateDao.class

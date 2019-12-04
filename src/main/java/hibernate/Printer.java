@@ -27,7 +27,7 @@ public class Printer implements HibernateEntity{
     @Getter @Setter
     @NonNull
     @ToString.Exclude
-    private boolean cmyk;
+    private String cmyk;
 
     @Column(name = "localization")
     @Getter @Setter
@@ -42,6 +42,43 @@ public class Printer implements HibernateEntity{
 
     public Printer (){}
 
+    public int getId() {
+        return id;
+    }
 
+    public void setId(int id) {
+        this.id = id;
+    }
 
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public String isCmyk() {
+        return cmyk;
+    }
+
+    public void setCmyk(String cmyk) {
+        this.cmyk = cmyk;
+    }
+
+    public String getLocalization() {
+        return localization;
+    }
+
+    public void setLocalization(String localization) {
+        this.localization = localization;
+    }
+
+    public Employees getEmployees() {
+        return employees;
+    }
+
+    public void setEmployees(Employees employees) {
+        this.employees = employees;
+    }
 }

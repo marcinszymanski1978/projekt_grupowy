@@ -1,16 +1,14 @@
 package controller;
 
-import hibernate.HibernateDao;
-import hibernate.Employees;
+import hibernate.*;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 @Controller
 public class EmpController {
@@ -51,6 +49,19 @@ public class EmpController {
         Employees employees = getEmployeesById(Integer.parseInt(id));
         return new ModelAndView("empform","command", employees);
     }
+    @RequestMapping(value="/show", method=RequestMethod.POST)
+    public ModelAndView show(@RequestParam String id, Model model){
+        Employees employees = getEmployeesById(Integer.parseInt(id));
+        Set<Phones> phonesSet = employees.getPhones();
+        Set<Cars> carsSet = employees.getCars();
+        Set<Printer> printerSet = employees.getPrinters();
+        model.addAttribute("employees", employees);
+        model.addAttribute("phoneSet", phonesSet);
+        model.addAttribute("carsSet", carsSet);
+        model.addAttribute("printerSet", printerSet);
+        return new ModelAndView("showEmp");
+    }
+
 
     @RequestMapping("/viewemp")
     public ModelAndView viewemp(){
@@ -58,6 +69,7 @@ public class EmpController {
         list = employeeDao.getEmployees();
         return new ModelAndView("viewemp","list", list);
     }
+
 
     private Employees getEmployeesById(@RequestParam int id) {
         return list.stream().filter(f -> f.getId() == id).findFirst().get();

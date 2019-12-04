@@ -1,8 +1,8 @@
 package controller;
 
-import hibernate.Cars;
 import hibernate.Employees;
 import hibernate.HibernateDao;
+import hibernate.Printer;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -11,33 +11,32 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Controller
-public class CarController {
+public class PrinterController {
 
-    private HibernateDao carDao;
+    private HibernateDao printerDao;
     private List<Employees> list;
 
-    public CarController() {
-        carDao = new HibernateDao();
-        list = carDao.getEmployees();
+    public PrinterController() {
+        printerDao = new HibernateDao();
+        list = printerDao.getEmployees();
     }
 
-    @RequestMapping("/carform")
+    @RequestMapping("/printerform")
     public ModelAndView showform(Model model){
 
         model.addAttribute("list", list);
 
-        return new ModelAndView("carform","command", new Cars());
+        return new ModelAndView("printerform","command", new Printer());
     }
 
-    @RequestMapping(value="/saveCar", method = RequestMethod.POST )
-    public ModelAndView saveCar(@ModelAttribute("car") Cars cars){
+    @RequestMapping(value="/savePrinter", method = RequestMethod.POST )
+    public ModelAndView savePrinter(@ModelAttribute("printer") Printer printer){
 
-        cars.setEmployees(getEmployeesById(cars.employees.getId()));
-        carDao.saveHibernateEntity(cars);
+        printer.setEmployees(getEmployeesById(printer.employees.getId()));
+        printerDao.saveHibernateEntity(printer);
 
         return new ModelAndView("redirect:");
     }
