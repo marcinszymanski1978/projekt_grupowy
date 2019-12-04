@@ -1,16 +1,16 @@
 package hibernate;
 
+import hibernate.HibernateEntity;
 import lombok.*;
+import hibernate.Employees;
 
 import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Set;
 
 @Entity
 @Table(name = "Printer")
 @ToString
 @RequiredArgsConstructor
-public class Printer implements HibernateEntity{
+public class Printer implements HibernateEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

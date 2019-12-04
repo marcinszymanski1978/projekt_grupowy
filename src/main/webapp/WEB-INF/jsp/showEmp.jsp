@@ -8,6 +8,7 @@
     adres: ${employees.address}, ${employees.city}
     email: ${employees.email}
 </div>
+<div class="singleList">
 <h1>Lista samochodów pracownika</h1>
 <div class="tbl-header">
     <table cellpadding="0" cellspacing="0" border="0">
@@ -34,4 +35,61 @@
         </c:forEach>
         </tbody>
     </table>
+</div>
+</div>
+<div class="singleList">
+    <h1>Lista telefonów pracownika</h1>
+    <div class="tbl-header">
+        <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Marka</th>
+                <th>Model</th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="tbl-content">
+        <table cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+            <c:forEach var="phone" items="${phoneSet}">
+                <tr>
+                    <td>${phone.id}</td>
+                    <td>${phone.name}</td>
+                    <td>${phone.model}</td>
+                </tr>
+            </c:forEach>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="singleList">
+    <h1>Lista samochodów pracownika</h1>
+    <div class="tbl-header">
+        <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Model</th>
+                <th>cmyk</th>
+                <th>Lokalizacja</th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="tbl-content">
+        <table cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+            <c:forEach var="printer" items="${printerSet}">
+                <tr>
+                    <td>${printer.id}</td>
+                    <td>${printer.model}</td>
+                    <td>${printer.cmyk}</td>
+                    <td>${printer.localization}</td>
+                </tr>
+            </c:forEach>
+            </tbody>
+        </table>
+    </div>
 </div>

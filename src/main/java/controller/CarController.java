@@ -18,16 +18,16 @@ import java.util.List;
 public class CarController {
 
     private HibernateDao carDao;
-    private List<Employees> list;
+    private List<Employees> list = new ArrayList<>();
 
     public CarController() {
         carDao = new HibernateDao();
-        list = carDao.getEmployees();
     }
 
     @RequestMapping("/carform")
     public ModelAndView showform(Model model){
-
+        list.clear();
+        list = carDao.getEmployees();
         model.addAttribute("list", list);
 
         return new ModelAndView("carform","command", new Cars());

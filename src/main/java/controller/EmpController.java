@@ -1,6 +1,10 @@
 package controller;
 
 import hibernate.*;
+import hibernate.Cars;
+import hibernate.Employees;
+import hibernate.Phones;
+import hibernate.Printer;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -20,6 +24,7 @@ public class EmpController {
 
     public EmpController() {
         employeeDao = new HibernateDao();
+        Employees employees = new Employees();
     }
 
     @RequestMapping("/empform")
@@ -29,12 +34,11 @@ public class EmpController {
 
     @RequestMapping(value="/save", method = RequestMethod.POST)
     public ModelAndView save(@ModelAttribute("employees") Employees employee){
-        if(employee.getId() == 0) {
-            employee.setId(list.size()+1);
-            employeeDao.saveHibernateEntity(employee);
-        } else {
+        if(employee.getId()!=null){
             employeeDao.updateHibernateEntity(employee);
         }
+        employeeDao.saveHibernateEntity(employee);
+
         return new ModelAndView("redirect:/viewemp");
     }
 

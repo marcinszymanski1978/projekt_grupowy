@@ -1,6 +1,8 @@
 package hibernate;
 
+import hibernate.HibernateEntity;
 import lombok.*;
+import hibernate.Employees;
 
 import javax.persistence.*;
 
@@ -8,7 +10,7 @@ import javax.persistence.*;
 @Table(name = "Phones")
 @ToString
 @RequiredArgsConstructor
-public class Phones implements HibernateEntity{
+public class Phones implements HibernateEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

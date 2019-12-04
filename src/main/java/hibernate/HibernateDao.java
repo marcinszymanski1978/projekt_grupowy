@@ -2,7 +2,6 @@ package hibernate;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 

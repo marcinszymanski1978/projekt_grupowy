@@ -18,15 +18,16 @@ import java.util.List;
 public class PhoneController {
 
     private HibernateDao phoneDao;
-    private List<Employees> list;
+    private List<Employees> list = new ArrayList<>();
 
     public PhoneController() {
         phoneDao = new HibernateDao();
-        list = phoneDao.getEmployees();
     }
 
     @RequestMapping("/phoneform")
     public ModelAndView showform(Model model){
+        list.clear();
+        list = phoneDao.getEmployees();
         model.addAttribute("list", list);
         return new ModelAndView("phoneform","command", new Phones());
     }

@@ -1,16 +1,17 @@
 package hibernate;
 
 
+import hibernate.Employees;
+import hibernate.HibernateEntity;
 import lombok.*;
 
 import javax.persistence.*;
-import java.util.Date;
 
 @Entity
 @Table(name = "Cars")
 @ToString
 @RequiredArgsConstructor
-public class Cars implements HibernateEntity{
+public class Cars implements HibernateEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -8,7 +8,7 @@
         <h3>Dodaj pracownika</h3>
         <p>do bazy danych</p>
         <form:hidden path="id"/>
-        <form:input path="firstName" placeholder= "imię"  autocomplete='off' />
+        <form:input path="firstName" placeholder= "imię"/>
         <form:input path="lastName"  placeholder="nazwisko"  />
         <form:input path="address"  placeholder="adres"  />
         <form:input path="city"  placeholder="miasto"  />

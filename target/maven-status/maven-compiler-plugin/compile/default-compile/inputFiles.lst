@@ -1,18 +1,18 @@
-C:\Users\miros\OneDrive\Pulpit\branch Mirek\src\main\java\database\CRUDStatementSQL.java
-C:\Users\miros\OneDrive\Pulpit\branch Mirek\src\main\java\hibernate\Cars.java
-C:\Users\miros\OneDrive\Pulpit\branch Mirek\src\main\java\mail\SendEmail.java
-C:\Users\miros\OneDrive\Pulpit\branch Mirek\src\main\java\controller\PhoneController.java
-C:\Users\miros\OneDrive\Pulpit\branch Mirek\src\main\java\hibernate\HibernateDao.java
-C:\Users\miros\OneDrive\Pulpit\branch Mirek\src\main\java\scope\MainScope.java
-C:\Users\miros\OneDrive\Pulpit\branch Mirek\src\main\java\controller\EmpController.java
-C:\Users\miros\OneDrive\Pulpit\branch Mirek\src\main\java\hibernate\HibernateConfig.java
-C:\Users\miros\OneDrive\Pulpit\branch Mirek\src\main\java\scope\ScopeExample.java
-C:\Users\miros\OneDrive\Pulpit\branch Mirek\src\main\java\database\Main.java
-C:\Users\miros\OneDrive\Pulpit\branch Mirek\src\main\java\hibernate\Printer.java
-C:\Users\miros\OneDrive\Pulpit\branch Mirek\src\main\java\controller\PrinterController.java
-C:\Users\miros\OneDrive\Pulpit\branch Mirek\src\main\java\database\TransactionsSQL.java
-C:\Users\miros\OneDrive\Pulpit\branch Mirek\src\main\java\hibernate\Employees.java
-C:\Users\miros\OneDrive\Pulpit\branch Mirek\src\main\java\controller\CarController.java
-C:\Users\miros\OneDrive\Pulpit\branch Mirek\src\main\java\hibernate\HibernateEntity.java
-C:\Users\miros\OneDrive\Pulpit\branch Mirek\src\main\java\hibernate\Phones.java
-C:\Users\miros\OneDrive\Pulpit\branch Mirek\src\main\java\database\SQLConnection.java
+C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\controller\PhoneController.java
+C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\database\TransactionsSQL.java
+C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\model\Printer.java
+C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\hibernate\HibernateEntity.java
+C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\database\Main.java
+C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\database\SQLConnection.java
+C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\hibernate\HibernateConfig.java
+C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\model\Employees.java
+C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\controller\EmpController.java
+C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\hibernate\HibernateDao.java
+C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\controller\CarController.java
+C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\mail\SendEmail.java
+C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\model\Cars.java
+C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\scope\MainScope.java
+C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\model\Phones.java
+C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\scope\ScopeExample.java
+C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\database\CRUDStatementSQL.java
+C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\controller\PrinterController.java

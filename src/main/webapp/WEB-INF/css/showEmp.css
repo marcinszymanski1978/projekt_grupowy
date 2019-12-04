@@ -1,6 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 
-
+.singleList{
+    width: 400px;
+    height: 400px;
+    float: left;
+    margin: 20px;
+}
 
 h1{
     font-size: 15px;
@@ -16,10 +21,8 @@ table{
 }
 .tbl-header{
     background-color: rgba(255,255,255,0.3);
-    width: 300px;
 }
 .tbl-content{
-    height:300px;
     overflow-x:auto;
     margin-top: 0px;
     border: 1px solid rgba(255,255,255,0.3);

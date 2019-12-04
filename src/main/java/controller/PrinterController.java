@@ -11,22 +11,23 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
 public class PrinterController {
 
     private HibernateDao printerDao;
-    private List<Employees> list;
+    private List<Employees> list = new ArrayList<>();
 
     public PrinterController() {
         printerDao = new HibernateDao();
-        list = printerDao.getEmployees();
     }
 
     @RequestMapping("/printerform")
     public ModelAndView showform(Model model){
-
+        list.clear();
+        list = printerDao.getEmployees();
         model.addAttribute("list", list);
 
         return new ModelAndView("printerform","command", new Printer());
