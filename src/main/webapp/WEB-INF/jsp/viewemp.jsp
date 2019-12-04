@@ -13,6 +13,11 @@
             <th>Nazwisko</th>
             <th>Imię</th>
             <th>Wynagrodzenie</th>
+            <th>Adres</th>
+            <th>Miasto</th>
+            <th>Wiek</th>
+            <th>Od kiedy pracuje</th>
+            <th>benefity</th>
             <th>Action</th>
         </tr>
         </thead>
@@ -27,6 +32,11 @@
                 <td>${emp.lastName}</td>
                 <td>${emp.firstName}</td>
                 <td>${emp.salary}</td>
+                <td>${emp.address}</td>
+                <td>${emp.city}</td>
+                <td>${emp.age}</td>
+                <td>${emp.startJobDate}</td>
+                <td>${emp.benefit}</td>
                 <td>
                     <form:form method="post" action="delete">
                         <input type="hidden" id="id" name="id" value="${emp.id}"/>

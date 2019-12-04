@@ -1,14 +1,18 @@
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-    <body>
-        <h2>
-            Hi!
-        </h2>
-            <a href="viewCars">View Cars</a><br/>
-            <a href="viewPhones">View Phones</a><br/>
-    </body>
-            <a href="viewPrinters">View Printers</a><br/>
-        	<a href="empform">Add Employee</a> <br/>
-            <a href="viewemp">View Employees</a><br/>
+<style><%@include file="/WEB-INF/css/index.css"%></style>
+<body>
+<h1>
+    Company Data Base
+</h1>
+<div id="content">
+    <a href="empform"><button class="button1">Dodaj pracownika</button></a>
+    <a href="viewemp"><button class="button1">Lista pracowników</button></a>
+    <a href="phoneform"><button class="button1">Dodaj telefon</button></a>
+    <a href="printerform"><button class="button1">Dodaj drukarkę</button></a>
+    <a href="carform"><button class="button1">Dodaj samochód</button></a>
+
+</div>
+</body>
 </html>

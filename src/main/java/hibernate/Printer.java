@@ -34,10 +34,10 @@ public class Printer implements HibernateEntity{
     @NonNull
     private String localization;
 
-    @ManyToMany(mappedBy = "printers")
-    @Getter @Setter
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinColumn(name = "EMPLOYEE_ID", nullable = false, referencedColumnName = "ID")
     @NonNull
-    public Set<Employees> employees = new HashSet<>();
+    public Employees employees;
 
 
     public Printer (){}

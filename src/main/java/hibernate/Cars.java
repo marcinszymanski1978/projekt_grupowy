@@ -4,6 +4,7 @@ package hibernate;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @Table(name = "Cars")
@@ -30,6 +31,12 @@ public class Cars implements HibernateEntity{
     @Setter
     @NonNull
     private String model;
+
+    @Column(name = "registrationDate")
+    @Getter
+    @Setter
+    @NonNull
+    private String registrationDate;
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "EMPLOYEE_ID", nullable = false, referencedColumnName = "ID")
