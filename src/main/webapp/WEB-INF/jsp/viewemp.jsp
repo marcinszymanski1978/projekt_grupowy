@@ -10,8 +10,8 @@
         <thead>
         <tr>
             <th>Id</th>
-            <th>Nazwisko</th>
             <th>Imię</th>
+            <th>Nazwisko</th>
             <th>Wynagrodzenie</th>
             <th>Adres</th>
             <th>Miasto</th>
