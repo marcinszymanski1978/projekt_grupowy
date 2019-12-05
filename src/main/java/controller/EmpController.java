@@ -1,10 +1,6 @@
 package controller;
 
 import hibernate.*;
-import hibernate.Cars;
-import hibernate.Employees;
-import hibernate.Phones;
-import hibernate.Printer;
 import mail.SendEmail;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -79,5 +75,10 @@ public class EmpController {
 
     private Employees getEmployeesById(@RequestParam int id) {
         return list.stream().filter(f -> f.getId() == id).findFirst().get();
+    }
+    @RequestMapping(value="/addImage", method = RequestMethod.POST)
+    public String addImage(@RequestParam String imageURL){
+
+        return "showEmp";
     }
 }

@@ -1,7 +1,6 @@
 package mail;
 
 import hibernate.Employees;
-import hibernate.HibernateEntity;
 
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;

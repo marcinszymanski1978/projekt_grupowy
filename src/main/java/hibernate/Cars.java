@@ -1,8 +1,6 @@
 package hibernate;
 
 
-import hibernate.Employees;
-import hibernate.HibernateEntity;
 import lombok.*;
 
 import javax.persistence.*;

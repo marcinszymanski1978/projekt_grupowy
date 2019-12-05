@@ -69,7 +69,10 @@ public class Employees implements HibernateEntity {
     @ToString.Exclude
     private Set<Printer> printers;
 
-
+    @OneToOne(mappedBy = "employees", orphanRemoval = true, fetch = FetchType.EAGER)
+    @Getter @Setter
+    @ToString.Exclude
+    private Avatar avatar;
 
     public Employees(){}
 
