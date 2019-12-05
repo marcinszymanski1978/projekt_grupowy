@@ -8,6 +8,7 @@ scope\ScopeExample.class
 controller\PhoneController.class
 hibernate\Cars.class
 hibernate\Phones.class
+mail\EmailInfo.class
 hibernate\HibernateEntity.class
 controller\CarController.class
 database\SQLConnection.class

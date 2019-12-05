@@ -5,6 +5,7 @@ import hibernate.Cars;
 import hibernate.Employees;
 import hibernate.Phones;
 import hibernate.Printer;
+import mail.SendEmail;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -19,12 +20,10 @@ public class EmpController {
 
     private List<Employees> list = new ArrayList<>();
     private HibernateDao employeeDao;
-    Employees employees;
-
+    private SendEmail sendEmail = new SendEmail();
 
     public EmpController() {
         employeeDao = new HibernateDao();
-        Employees employees = new Employees();
     }
 
     @RequestMapping("/empform")
@@ -35,7 +34,11 @@ public class EmpController {
     @RequestMapping(value="/save", method = RequestMethod.POST)
     public ModelAndView save(@ModelAttribute("employees") Employees employee){
         if(employee.getId()!=null){
+            List<Employees> employeesList = employeeDao.getEmployees();
+            Employees employeesBeforeUpdate = employeesList.stream().filter(f -> f.getId().equals(employee.getId())).findFirst().get();
             employeeDao.updateHibernateEntity(employee);
+            String message = sendEmail.prepareMessage(employeesBeforeUpdate, employee);
+            sendEmail.sendEmail(message, employee);
         }
         employeeDao.saveHibernateEntity(employee);
 
@@ -50,6 +53,7 @@ public class EmpController {
 
     @RequestMapping(value="/edit", method=RequestMethod.POST)
     public ModelAndView edit(@RequestParam String id){
+
         Employees employees = getEmployeesById(Integer.parseInt(id));
         return new ModelAndView("empform","command", employees);
     }
@@ -66,14 +70,12 @@ public class EmpController {
         return new ModelAndView("showEmp");
     }
 
-
     @RequestMapping("/viewemp")
     public ModelAndView viewemp(){
         list.clear();
         list = employeeDao.getEmployees();
         return new ModelAndView("viewemp","list", list);
     }
-
 
     private Employees getEmployeesById(@RequestParam int id) {
         return list.stream().filter(f -> f.getId() == id).findFirst().get();

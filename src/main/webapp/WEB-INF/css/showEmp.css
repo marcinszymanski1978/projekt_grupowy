@@ -1,5 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 
+#personal{
+    width: 50%;
+    height: 200px;
+    color: #fff;
+    font-size:20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
 .singleList{
     width: 400px;
     height: 400px;
