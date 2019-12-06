@@ -1,3 +1,4 @@
+/*
 package hibernate;
 
 import lombok.Data;
@@ -28,7 +29,8 @@ public class Avatar implements HibernateEntity{
     public Employees employees;
 
     public Avatar(){}
-
-
-
 }
+*/
+
+
+

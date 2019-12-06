@@ -6,7 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-import service.AvatarService;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,15 +29,24 @@ public class EmpController {
     }
 
     @RequestMapping(value="/save", method = RequestMethod.POST)
-    public ModelAndView save(@ModelAttribute("employees") Employees employee, @ModelAttribute("avatar") Avatar avatar){
+    public ModelAndView save(@ModelAttribute("employees") Employees employee/* @ModelAttribute("avatar") Avatar avatar*/){
         if(employee.getId()!=null){
+//            update
             List<Employees> employeesList = employeeDao.getEmployees();
             Employees employeesBeforeUpdate = employeesList.stream().filter(f -> f.getId().equals(employee.getId())).findFirst().get();
             employeeDao.updateHibernateEntity(employee);
             String message = sendEmail.prepareMessage(employeesBeforeUpdate, employee);
             sendEmail.sendEmail(message, employee);
+
+        } else {
+//            add
+            List employeesList = employeeDao.getEmployees();
+            employee.setId(employeesList.size() + 1);
+            employeesList.add(employee);
+            employeeDao.saveHibernateEntity(employee);
+
         }
-        employeeDao.saveHibernateEntity(employee);
+
 
         return new ModelAndView("redirect:/viewemp");
     }
@@ -74,6 +83,18 @@ public class EmpController {
         list = employeeDao.getEmployees();
         return new ModelAndView("viewemp","list", list);
     }
+
+    @RequestMapping(value="/start", method=RequestMethod.POST)
+    public ModelAndView start(){
+        System.out.println("Back to Home Page");
+        return new ModelAndView("redirect:/");}
+
+    @RequestMapping(value="/test", method=RequestMethod.POST)
+    public ModelAndView test(){
+        System.out.println("Test");
+        return new ModelAndView("redirect:/viewemp");
+    }
+
 
     private Employees getEmployeesById(@RequestParam int id) {
         return list.stream().filter(f -> f.getId() == id).findFirst().get();

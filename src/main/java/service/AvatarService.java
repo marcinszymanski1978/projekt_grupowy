@@ -1,3 +1,4 @@
+/*
 package service;
 
 import hibernate.Avatar;
@@ -31,3 +32,4 @@ public class AvatarService {
     }
 
 }
+*/
