@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+import service.AvatarService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,7 +29,7 @@ public class EmpController {
     }
 
     @RequestMapping(value="/save", method = RequestMethod.POST)
-    public ModelAndView save(@ModelAttribute("employees") Employees employee){
+    public ModelAndView save(@ModelAttribute("employees") Employees employee, @ModelAttribute("avatar") Avatar avatar){
         if(employee.getId()!=null){
             List<Employees> employeesList = employeeDao.getEmployees();
             Employees employeesBeforeUpdate = employeesList.stream().filter(f -> f.getId().equals(employee.getId())).findFirst().get();
@@ -40,6 +41,7 @@ public class EmpController {
 
         return new ModelAndView("redirect:/viewemp");
     }
+
 
     @RequestMapping(value="/delete", method=RequestMethod.POST)
     public ModelAndView delete(@RequestParam String id){
@@ -76,9 +78,12 @@ public class EmpController {
     private Employees getEmployeesById(@RequestParam int id) {
         return list.stream().filter(f -> f.getId() == id).findFirst().get();
     }
-    @RequestMapping(value="/addImage", method = RequestMethod.POST)
-    public String addImage(@RequestParam String imageURL){
+    /*@RequestMapping(value="/addImage", method = RequestMethod.POST)
+    public String addImage(@RequestParam String imageURL, @RequestParam String id){
 
+        AvatarService avatarService = new AvatarService();
+        avatarService.addImageToDatabase();
         return "showEmp";
-    }
+    }*/
+
 }
