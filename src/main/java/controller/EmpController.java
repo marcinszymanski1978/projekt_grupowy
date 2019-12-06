@@ -32,9 +32,10 @@ public class EmpController {
     public ModelAndView save(@ModelAttribute("employees") Employees employee/* @ModelAttribute("avatar") Avatar avatar*/){
         if(employee.getId()!=null){
 //            update
+            employeeDao.updateHibernateEntity(employee);
+
             List<Employees> employeesList = employeeDao.getEmployees();
             Employees employeesBeforeUpdate = employeesList.stream().filter(f -> f.getId().equals(employee.getId())).findFirst().get();
-            employeeDao.updateHibernateEntity(employee);
             String message = sendEmail.prepareMessage(employeesBeforeUpdate, employee);
             sendEmail.sendEmail(message, employee);
 

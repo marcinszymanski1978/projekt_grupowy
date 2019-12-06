@@ -23,6 +23,9 @@
                 <th>Marka</th>
                 <th>Model</th>
                 <th>Data rej.</th>
+                <th>Delete</th>
+                <th>Edit</th>
+                <th>Show</th>
             </tr>
             </thead>
         </table>
@@ -36,10 +39,29 @@
                     <td>${car.name}</td>
                     <td>${car.model}</td>
                     <td>${car.registrationDate}</td>
+                    <td>
+                        <form:form method="post" action="deleteCar">
+                            <input type="hidden" id="id" name="id" value="${car.id}"/>
+                            <input type="submit" class="button1" name="Delete" value="delete"/>
+                        </form:form>
+                    </td>
+                    <td>
+                        <form:form method="post" action="editCar">
+                            <input type="hidden" id="id" name="id" value="${car.id}"/>
+                            <input type="submit" class="button1" name="Edit" value="edit"/>
+                        </form:form>
+                    </td>
+                    <td>
+                        <form:form method="post" action="showCar">
+                            <input type="hidden" id="id" name="id" value="${car.id}"/>
+                            <input type="submit" class="button1" name="Show" value="show"/>
+                        </form:form>
+                    </td>
                 </tr>
             </c:forEach>
             </tbody>
         </table>
+
     </div>
 </div>
 <div class="singleList">
@@ -63,6 +85,24 @@
                     <td>${phone.id}</td>
                     <td>${phone.name}</td>
                     <td>${phone.model}</td>
+                    <td>
+                        <form:form method="post" action="deletePhone">
+                            <input type="hidden" id="id" name="id" value="${phone.id}"/>
+                            <input type="submit" class="button1" name="Delete" value="delete"/>
+                        </form:form>
+                    </td>
+                    <td>
+                        <form:form method="post" action="editPhone">
+                            <input type="hidden" id="id" name="id" value="${phone.id}"/>
+                            <input type="submit" class="button1" name="Edit" value="edit"/>
+                        </form:form>
+                    </td>
+                    <td>
+                        <form:form method="post" action="showPhone">
+                            <input type="hidden" id="id" name="id" value="${phone.id}"/>
+                            <input type="submit" class="button1" name="Show" value="show"/>
+                        </form:form>
+                    </td>
                 </tr>
             </c:forEach>
             </tbody>

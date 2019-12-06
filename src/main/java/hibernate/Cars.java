@@ -16,7 +16,7 @@ public class Cars implements HibernateEntity {
     @Column(name = "ID")
     @Getter
     @Setter
-    private int id;
+    private Integer id;
 
 
     @Column(name = "name")
