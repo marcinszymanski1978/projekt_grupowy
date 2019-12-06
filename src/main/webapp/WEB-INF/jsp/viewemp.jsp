@@ -57,9 +57,11 @@
     </table>
 <br/>
     <td>
+
         <form:form method="post" action="test">
             <input type="submit" class="button" name="test" value="Refresh"/>
         </form:form>
+        <br/>
         <br/>
         <form:form method="post" action="start">
             <input type="submit" class="button" name="start" value="Home Page"/>
