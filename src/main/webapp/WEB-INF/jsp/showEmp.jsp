@@ -96,5 +96,20 @@
             </c:forEach>
             </tbody>
         </table>
+        <br/>
     </div>
 </div>
+<br/>
+     <table>
+
+        <td>
+            <form:form method="post" action="test">
+                <input type="submit" class="button" name="test" value="Employee List"/>
+            </form:form>
+            <br/>
+            <form:form method="post" action="start">
+                <input type="submit" class="button" name="start" value="Home Page"/>
+            </form:form>
+            <br/>
+        </td>
+     </table>
