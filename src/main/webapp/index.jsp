@@ -12,7 +12,7 @@
     <a href="phoneform"><button class="button1">Dodaj telefon</button></a>
     <a href="printerform"><button class="button1">Dodaj drukarkę</button></a>
     <a href="carform"><button class="button1">Dodaj samochód</button></a>
-
+    <a href="addImage"><button class = "button1">Dodaj zdjęcie</button></a>
 </div>
 </body>
 </html>

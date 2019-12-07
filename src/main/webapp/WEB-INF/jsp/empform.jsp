@@ -24,4 +24,11 @@
         <form:button class="form-btn dx" type="submit" value="save">Dodaj</form:button>
     </form:form>
 
+    <input type="file" id="i_file" value="">
+    <input type="button" id="i_submit" value="Submit">
+    <br>
+    <img src="" width="200" style="display:none;" />
+    <br>
+    <div id="disp_tmp_path"></div>
+
 </div>

@@ -1,4 +1,4 @@
-/*
+
 package hibernate;
 
 import lombok.Data;
@@ -21,7 +21,7 @@ public class Avatar implements HibernateEntity{
     @Column(name = "image")
     private byte[] image;
 
-    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "EMPLOYEE_ID", nullable = false, referencedColumnName = "ID")
     @Getter
     @Setter
@@ -30,7 +30,7 @@ public class Avatar implements HibernateEntity{
 
     public Avatar(){}
 }
-*/
+
 
 
 

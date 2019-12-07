@@ -1,6 +1,8 @@
 C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\controller\PhoneController.java
 C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\database\TransactionsSQL.java
+C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\hibernate\Avatar.java
 C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\hibernate\HibernateEntity.java
+C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\service\AvatarService.java
 C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\mail\EmailInfo.java
 C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\database\Main.java
 C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\database\SQLConnection.java
@@ -14,6 +16,6 @@ C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\mail\Sen
 C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\hibernate\Employees.java
 C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\hibernate\Cars.java
 C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\database\CRUDStatementSQL.java
-C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\hibernate\Image.java
+C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\controller\ImageController.java
 C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\controller\PrinterController.java
 C:\Users\miros\OneDrive\Pulpit\Projekt grupowy z Marcinem\src\main\java\service\FileGetter.java

@@ -42,8 +42,8 @@ public class CarController {
 //    update
         else {
 //            add
-        cars.setEmployees(getEmployeesById(cars.employees.getId()));
-        carDao.saveHibernateEntity(cars);
+            cars.setEmployees(getEmployeesById(cars.employees.getId()));
+            carDao.saveHibernateEntity(cars);
         }
 
         return new ModelAndView("redirect:");

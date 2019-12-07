@@ -1,16 +1,21 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="Form" uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <style>
     <%@include file="/WEB-INF/css/showEmp.css" %>
 </style>
 <div id="personal">
+
     ${employees.lastName} ${employees.firstName}<br/>
     pracuje od: ${employees.startJobDate}<br/>
     adres: ${employees.address}, ${employees.city}<br/>
     wiek: ${employees.age} lat<br/>
     wynagrodzenie: ${employees.salary} zł<br/>
     email: ${employees.email}<br/>
+</div>
+<div id="photo">
+
 
 </div>
 <div class="singleList">
@@ -23,9 +28,6 @@
                 <th>Marka</th>
                 <th>Model</th>
                 <th>Data rej.</th>
-                <th>Delete</th>
-                <th>Edit</th>
-                <th>Show</th>
             </tr>
             </thead>
         </table>
@@ -39,29 +41,10 @@
                     <td>${car.name}</td>
                     <td>${car.model}</td>
                     <td>${car.registrationDate}</td>
-                    <td>
-                        <form:form method="post" action="deleteCar">
-                            <input type="hidden" id="id" name="id" value="${car.id}"/>
-                            <input type="submit" class="button1" name="Delete" value="delete"/>
-                        </form:form>
-                    </td>
-                    <td>
-                        <form:form method="post" action="editCar">
-                            <input type="hidden" id="id" name="id" value="${car.id}"/>
-                            <input type="submit" class="button1" name="Edit" value="edit"/>
-                        </form:form>
-                    </td>
-                    <td>
-                        <form:form method="post" action="showCar">
-                            <input type="hidden" id="id" name="id" value="${car.id}"/>
-                            <input type="submit" class="button1" name="Show" value="show"/>
-                        </form:form>
-                    </td>
                 </tr>
             </c:forEach>
             </tbody>
         </table>
-
     </div>
 </div>
 <div class="singleList">
@@ -85,24 +68,6 @@
                     <td>${phone.id}</td>
                     <td>${phone.name}</td>
                     <td>${phone.model}</td>
-                    <td>
-                        <form:form method="post" action="deletePhone">
-                            <input type="hidden" id="id" name="id" value="${phone.id}"/>
-                            <input type="submit" class="button1" name="Delete" value="delete"/>
-                        </form:form>
-                    </td>
-                    <td>
-                        <form:form method="post" action="editPhone">
-                            <input type="hidden" id="id" name="id" value="${phone.id}"/>
-                            <input type="submit" class="button1" name="Edit" value="edit"/>
-                        </form:form>
-                    </td>
-                    <td>
-                        <form:form method="post" action="showPhone">
-                            <input type="hidden" id="id" name="id" value="${phone.id}"/>
-                            <input type="submit" class="button1" name="Show" value="show"/>
-                        </form:form>
-                    </td>
                 </tr>
             </c:forEach>
             </tbody>
@@ -110,7 +75,7 @@
     </div>
 </div>
 <div class="singleList">
-    <h1>Lista samochodów pracownika</h1>
+    <h1>Lista drukarek pracownika</h1>
     <div class="tbl-header">
         <table cellpadding="0" cellspacing="0" border="0">
             <thead>
@@ -136,20 +101,18 @@
             </c:forEach>
             </tbody>
         </table>
-        <br/>
     </div>
 </div>
 <br/>
-     <table>
-
-        <td>
-            <form:form method="post" action="test">
-                <input type="submit" class="button" name="test" value="Employee List"/>
-            </form:form>
-            <br/>
-            <form:form method="post" action="start">
-                <input type="submit" class="button" name="start" value="Home Page"/>
-            </form:form>
-            <br/>
-        </td>
-     </table>
+<table>
+    <td>
+        <form:form method="post" action="test">
+            <input type="submit" class="button" name="test" value="Employee List"/>
+        </form:form>
+        <br/>
+        <form:form method="post" action="start">
+            <input type="submit" class="button" name="start" value="Home Page"/>
+        </form:form>
+        <br/>
+    </td>
+</table>

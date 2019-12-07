@@ -1,4 +1,4 @@
-/*
+
 package service;
 
 import hibernate.Avatar;
@@ -12,8 +12,8 @@ import java.io.FileInputStream;
 @Service
 public class AvatarService {
 
-    public void addImageToDatabase(Employees employees, String filePath){
-        File file = new File(filePath);
+    public void addImageToDatabase(Employees employees, File file){
+
         byte[] bFile = new byte[(int) file.length()];
         try {
             FileInputStream fileInputStream = new FileInputStream(file);
@@ -24,7 +24,7 @@ public class AvatarService {
         }
 
         Avatar avatar = new Avatar();
-//        avatar.setEmployees(employees);
+        avatar.setEmployees(employees);
         avatar.setImage(bFile);
 
         HibernateDao hibernateDao = new HibernateDao();
@@ -32,4 +32,4 @@ public class AvatarService {
     }
 
 }
-*/
+

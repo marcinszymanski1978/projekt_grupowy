@@ -4,6 +4,8 @@ mail\SendEmail.class
 controller\EmpController.class
 database\Main.class
 hibernate\HibernateConfig.class
+service\AvatarService.class
+controller\ImageController.class
 controller\PhoneController.class
 hibernate\Cars.class
 hibernate\Phones.class
@@ -14,5 +16,7 @@ database\TransactionsSQL.class
 database\SQLConnection.class
 controller\PrinterController.class
 database\CRUDStatementSQL.class
+hibernate\Avatar.class
+model\FileGetter.class
 hibernate\HibernateDao.class
 mail\SendEmail$1.class
