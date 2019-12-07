@@ -10,13 +10,13 @@ import java.util.*;
 @Entity
 @Table(name = "Employees")
 @ToString
-public class Employees implements HibernateEntity{
+public class Employees implements HibernateEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
     @Getter @Setter
-    private int id;
+    private Integer id;
 
     @Column(name = "LastName")
     @Getter @Setter
@@ -36,19 +36,19 @@ public class Employees implements HibernateEntity{
 
     @Column(name = "Salary")
     @Getter @Setter
-    private int salary;
+    private Integer salary;
 
     @Column(name = "Age")
     @Getter @Setter
-    private int age;
+    private Integer age;
 
     @Column(name = "StartJobDate")
     @Getter @Setter
-    private Date startJobDate;
+    private String startJobDate;
 
     @Column(name = "Benefit")
     @Getter @Setter
-    private int benefit;
+    private Integer benefit;
 
     @Column(name = "Email")
     @Getter @Setter
@@ -64,20 +64,19 @@ public class Employees implements HibernateEntity{
     @ToString.Exclude
     private Set<Phones> phones;
 
-    @ManyToMany
-    @JoinTable(
-            name = "Employees_Printers",
-            joinColumns = @JoinColumn(name = "EMPLOYEE_ID"),
-            inverseJoinColumns = @JoinColumn(name = "PRINTER_ID"))
+    @OneToMany(mappedBy = "employees", orphanRemoval = true, fetch = FetchType.EAGER)
     @Getter @Setter
     @ToString.Exclude
-    private Set<Printer> printers = new HashSet<>();
+    private Set<Printer> printers;
 
-
+    /*@OneToOne(mappedBy = "employees", orphanRemoval = true, fetch = FetchType.EAGER)
+    @Getter @Setter
+    @ToString.Exclude
+    private Avatar avatar;*/
 
     public Employees(){}
 
-    public Employees(String lastName, String firstName, String address, String city, int salary, int age, Date startJobDate, int benefit, String email) {
+    public Employees(String lastName, String firstName, String address, String city, int salary, int age, String startJobDate, int benefit, String email) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.address = address;

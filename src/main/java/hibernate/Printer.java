@@ -1,16 +1,16 @@
 package hibernate;
 
+import hibernate.HibernateEntity;
 import lombok.*;
+import hibernate.Employees;
 
 import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Set;
 
 @Entity
 @Table(name = "Printer")
 @ToString
 @RequiredArgsConstructor
-public class Printer implements HibernateEntity{
+public class Printer implements HibernateEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,21 +27,58 @@ public class Printer implements HibernateEntity{
     @Getter @Setter
     @NonNull
     @ToString.Exclude
-    private boolean cmyk;
+    private String cmyk;
 
     @Column(name = "localization")
     @Getter @Setter
     @NonNull
     private String localization;
 
-    @ManyToMany(mappedBy = "printers")
-    @Getter @Setter
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinColumn(name = "EMPLOYEE_ID", nullable = false, referencedColumnName = "ID")
     @NonNull
-    public Set<Employees> employees = new HashSet<>();
+    public Employees employees;
 
 
     public Printer (){}
 
+    public int getId() {
+        return id;
+    }
 
+    public void setId(int id) {
+        this.id = id;
+    }
 
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public String isCmyk() {
+        return cmyk;
+    }
+
+    public void setCmyk(String cmyk) {
+        this.cmyk = cmyk;
+    }
+
+    public String getLocalization() {
+        return localization;
+    }
+
+    public void setLocalization(String localization) {
+        this.localization = localization;
+    }
+
+    public Employees getEmployees() {
+        return employees;
+    }
+
+    public void setEmployees(Employees employees) {
+        this.employees = employees;
+    }
 }

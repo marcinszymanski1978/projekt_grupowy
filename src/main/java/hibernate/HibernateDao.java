@@ -2,11 +2,11 @@ package hibernate;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import org.springframework.http.ResponseEntity;
+import org.hibernate.type.ImageType;
 
 import java.util.List;
 
-public class HibernateDao implements HibernateEntity{
+public class HibernateDao implements HibernateEntity {
 
     public void saveHibernateEntity(HibernateEntity hibernateEntity) {
         Transaction transaction = null;
@@ -88,7 +88,6 @@ public class HibernateDao implements HibernateEntity{
 
         }
     }
-
 
 
 }

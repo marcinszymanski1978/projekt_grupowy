@@ -9,14 +9,14 @@ import javax.persistence.*;
 @Table(name = "Cars")
 @ToString
 @RequiredArgsConstructor
-public class Cars implements HibernateEntity{
+public class Cars implements HibernateEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
     @Getter
     @Setter
-    private int id;
+    private Integer id;
 
 
     @Column(name = "name")
@@ -30,6 +30,12 @@ public class Cars implements HibernateEntity{
     @Setter
     @NonNull
     private String model;
+
+    @Column(name = "registrationDate")
+    @Getter
+    @Setter
+    @NonNull
+    private String registrationDate;
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "EMPLOYEE_ID", nullable = false, referencedColumnName = "ID")
